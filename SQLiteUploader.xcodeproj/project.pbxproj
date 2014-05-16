@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		4FB8649019268A2E00CFB967 /* libUniversalSQLiteUploader */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4FB8649119268A2E00CFB967 /* Build configuration list for PBXAggregateTarget "libUniversalSQLiteUploader" */;
+			buildPhases = (
+				4FB8649419268A3300CFB967 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = libUniversalSQLiteUploader;
+			productName = libUniversalSQLiteUploader;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		4FB864511926767300CFB967 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB864501926767300CFB967 /* Foundation.framework */; };
 		4FB864561926767300CFB967 /* SQLiteUploader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FB864551926767300CFB967 /* SQLiteUploader.h */; };
@@ -16,6 +30,11 @@
 		4FB864651926767300CFB967 /* libSQLiteUploader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB8644D1926767300CFB967 /* libSQLiteUploader.a */; };
 		4FB8646B1926767300CFB967 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FB864691926767300CFB967 /* InfoPlist.strings */; };
 		4FB8646D1926767300CFB967 /* SQLiteUploaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8646C1926767300CFB967 /* SQLiteUploaderTests.m */; };
+		4FB86486192681B100CFB967 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8647C192681B100CFB967 /* ioapi.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4FB86487192681B100CFB967 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8647E192681B100CFB967 /* mztools.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4FB86488192681B100CFB967 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FB86480192681B100CFB967 /* unzip.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4FB86489192681B100CFB967 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FB86482192681B100CFB967 /* zip.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4FB8648A192681B100CFB967 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FB86485192681B100CFB967 /* ZipArchive.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +72,17 @@
 		4FB864681926767300CFB967 /* SQLiteUploaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SQLiteUploaderTests-Info.plist"; sourceTree = "<group>"; };
 		4FB8646A1926767300CFB967 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4FB8646C1926767300CFB967 /* SQLiteUploaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLiteUploaderTests.m; sourceTree = "<group>"; };
+		4FB8647B192681B100CFB967 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		4FB8647C192681B100CFB967 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		4FB8647D192681B100CFB967 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		4FB8647E192681B100CFB967 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		4FB8647F192681B100CFB967 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		4FB86480192681B100CFB967 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		4FB86481192681B100CFB967 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		4FB86482192681B100CFB967 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		4FB86483192681B100CFB967 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		4FB86484192681B100CFB967 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		4FB86485192681B100CFB967 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +140,7 @@
 		4FB864521926767300CFB967 /* SQLiteUploader */ = {
 			isa = PBXGroup;
 			children = (
+				4FB864781926818600CFB967 /* Libraries */,
 				4FB864551926767300CFB967 /* SQLiteUploader.h */,
 				4FB864571926767300CFB967 /* SQLiteUploader.m */,
 				4FB864531926767300CFB967 /* Supporting Files */,
@@ -141,6 +172,40 @@
 				4FB864691926767300CFB967 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FB864781926818600CFB967 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				4FB864791926819600CFB967 /* ZipArchive */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		4FB864791926819600CFB967 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				4FB8647A192681B100CFB967 /* minizip */,
+				4FB86484192681B100CFB967 /* ZipArchive.h */,
+				4FB86485192681B100CFB967 /* ZipArchive.mm */,
+			);
+			name = ZipArchive;
+			sourceTree = "<group>";
+		};
+		4FB8647A192681B100CFB967 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				4FB8647B192681B100CFB967 /* crypt.h */,
+				4FB8647C192681B100CFB967 /* ioapi.c */,
+				4FB8647D192681B100CFB967 /* ioapi.h */,
+				4FB8647E192681B100CFB967 /* mztools.c */,
+				4FB8647F192681B100CFB967 /* mztools.h */,
+				4FB86480192681B100CFB967 /* unzip.c */,
+				4FB86481192681B100CFB967 /* unzip.h */,
+				4FB86482192681B100CFB967 /* zip.c */,
+				4FB86483192681B100CFB967 /* zip.h */,
+			);
+			path = minizip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +269,7 @@
 			targets = (
 				4FB8644C1926767300CFB967 /* SQLiteUploader */,
 				4FB8645C1926767300CFB967 /* SQLiteUploaderTests */,
+				4FB8649019268A2E00CFB967 /* libUniversalSQLiteUploader */,
 			);
 		};
 /* End PBXProject section */
@@ -219,12 +285,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4FB8649419268A3300CFB967 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target SQLiteUploader ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target SQLiteUploader -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4FB864491926767300CFB967 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FB86486192681B100CFB967 /* ioapi.c in Sources */,
 				4FB864581926767300CFB967 /* SQLiteUploader.m in Sources */,
+				4FB86488192681B100CFB967 /* unzip.c in Sources */,
+				4FB86489192681B100CFB967 /* zip.c in Sources */,
+				4FB8648A192681B100CFB967 /* ZipArchive.mm in Sources */,
+				4FB86487192681B100CFB967 /* mztools.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +473,20 @@
 			};
 			name = Release;
 		};
+		4FB8649219268A2E00CFB967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4FB8649319268A2E00CFB967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,6 +512,14 @@
 			buildConfigurations = (
 				4FB864741926767300CFB967 /* Debug */,
 				4FB864751926767300CFB967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4FB8649119268A2E00CFB967 /* Build configuration list for PBXAggregateTarget "libUniversalSQLiteUploader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB8649219268A2E00CFB967 /* Debug */,
+				4FB8649319268A2E00CFB967 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

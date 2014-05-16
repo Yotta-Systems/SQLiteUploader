@@ -8,6 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol SQLiteUploadDelegate <NSObject>
+
+@optional
+
+- (void) didFinishUpload:(NSData *)data;
+- (void) didFailWithError:(NSError *)error;
+
+@end
+
 @interface SQLiteUploader : NSObject
+
+{
+    NSString *sqliteLocationPath;
+    NSURL* serverUrl;
+    NSMutableArray* sqlFiles;
+}
+
+-(id) initWithSqliteLocationPath:(NSString*)path andServerUrl:(NSURL*)url;
+-(void) upload;
+
+@property (nonatomic, weak) id <SQLiteUploadDelegate> delegate;
 
 @end

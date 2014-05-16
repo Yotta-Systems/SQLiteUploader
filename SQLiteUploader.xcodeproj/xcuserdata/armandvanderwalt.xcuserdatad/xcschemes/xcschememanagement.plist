@@ -4,10 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>SQLLiteUploader.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>SQLiteUploader.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>libUniversalSQLiteUploader.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>4FB8645C1926767300CFB967</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4FB8648B1926890500CFB967</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4FB8649019268A2E00CFB967</key>
 		<dict>
 			<key>primary</key>
 			<true/>
