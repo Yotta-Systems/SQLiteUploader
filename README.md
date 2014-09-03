@@ -4,7 +4,7 @@ SQLiteUploader
 Easy library to upload sqlite database files to a server
 
 
-The MIT License (MIT)
+##The MIT License (MIT)
 
 Copyright (c) 2014 Yotta (Pty) Ltd
 
